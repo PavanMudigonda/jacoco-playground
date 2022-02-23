@@ -36,7 +36,19 @@ jobs:
         min-coverage-overall: 40
         min-coverage-changed-files: 60
         debug-mode: false
-
+        
+    - name: JaCoCo Code Coverage Report
+      id: jacoco_reporter
+      uses: PavanMudigonda/jacoco-reporter@v2.3
+      with:
+        coverage_results_path: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
+        coverage_report_name: Code Coverage Report
+        coverage_report_title: JaCoCo
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        skip_check_run: false
+        minimum_coverage: 80
+        fail_below_threshold: false
+          
     - name: Get the Coverage info
       run: |
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
