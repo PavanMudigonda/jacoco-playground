@@ -47,7 +47,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         skip_check_run: true
         minimum_coverage: 80
-        fail_below_threshold: true
+        fail_below_threshold: false
           
     - name: Get the Coverage info
       run: |
