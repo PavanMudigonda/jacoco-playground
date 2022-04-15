@@ -48,7 +48,7 @@ jobs:
         skip_check_run: false
         minimum_coverage: 80
         fail_below_threshold: false
-        publish_only_summary: true
+        publish_only_summary: false
 
       # uploads the coverage-report.md artifact    
     - name: Upload Code Coverage Artifacts
