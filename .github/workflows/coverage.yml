@@ -63,11 +63,3 @@ jobs:
       run: |
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
-
-    - uses: actions/checkout@v2
-    - id: pmd
-      uses: rtjl/pmd-analyzer-action@v0.1.5-alpha
-      with:
-        pmd-version: '6.31.0'
-        source-path: '.'
-        rule-path: './PMDRules.xml'
