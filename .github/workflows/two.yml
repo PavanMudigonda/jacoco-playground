@@ -48,7 +48,7 @@ jobs:
         
     - name: JaCoCo Code Coverage Report
       id: jacoco_reporter
-      uses: PavanMudigonda/jacoco-reporter@v3.6
+      uses: PavanMudigonda/jacoco-reporter@v3.7
       with:
         coverage_results_path: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
         coverage_report_name: Coverage
