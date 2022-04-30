@@ -1,5 +1,5 @@
 name: Measure coverage
-# Test# 1
+# Test# 2
 
 on:
   push:
