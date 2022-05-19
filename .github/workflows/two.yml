@@ -85,4 +85,4 @@ jobs:
          
     - name: publish coverage job summary markdown
       run: |
-        echo  ${{ steps.jacoco_reporter.outputs.coverage_build_summary_data_md }} >> $GITHUB_STEP_SUMMARY
+        cat ${{ steps.jacoco_reporter.outputs.coverage_build_summary_data_md }} >> $GITHUB_STEP_SUMMARY
