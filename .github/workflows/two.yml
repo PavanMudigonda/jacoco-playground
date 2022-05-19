@@ -74,15 +74,16 @@ jobs:
         
     - name: construct coverage job summary markdown
       run: |
-        echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
-        cat cat > coverage_summary.md <<EOF
-        | Outcome                     | Value                                                    |
-        |-----------------------------|----------------------------------------------------------|
-        | Code Coverage %             | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
-        | Number of Lines Covered [ ] | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
-        | Number of Lines Missed [x]  | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
-        | Total Number of Lines       | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
-         EOF
+        cat > coverage_summary.md <<EOF
+        
+            | Outcome                     | Value                                                    |
+            |-----------------------------|----------------------------------------------------------|
+            | Code Coverage %             | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
+            | Number of Lines Covered [ ] | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
+            | Number of Lines Missed [x]  | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
+            | Total Number of Lines       | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
+        
+        EOF
          
     - name: publish coverage job summary markdown
       run: |
