@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions #1
+# This is a basic workflow to help you get started with Actions #2
 
 name: CI-TWO
 
@@ -85,4 +85,4 @@ jobs:
          
     - name: publish coverage job summary markdown
       run: |
-        echo  {{ steps.jacoco_reporter.outputs.coverageBuildSummaryData }} >> $GITHUB_STEP_SUMMARY
+        echo  {{ steps.jacoco_reporter.outputs.coverage_build_summary_data_md }} >> $GITHUB_STEP_SUMMARY
