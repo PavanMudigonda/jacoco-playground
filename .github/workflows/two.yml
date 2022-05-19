@@ -78,8 +78,8 @@ jobs:
           | Outcome                     | Value                                                    |
           |-----------------------------|----------------------------------------------------------|
           | Code Coverage %             | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
-          | Number of Lines Covered [ ] | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
-          | Number of Lines Missed [x]  | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
+          | - [x] Number of Lines Covered | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
+          | - [ ] Number of Lines Missed | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
           | Total Number of Lines       | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
         EOF
          
