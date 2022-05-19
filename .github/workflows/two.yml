@@ -75,7 +75,7 @@ jobs:
     - name: construct coverage job summary markdown
       run: |
         cat > coverage_summary.md <<EOF
-          | Outcome                                    | Value                                                    |
+          | Code Coverage Summary                      | Value                                                    |
           |--------------------------------------------|----------------------------------------------------------|
           | Code Coverage %                            | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
           | :heavy_check_mark: Number of Lines Covered | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
