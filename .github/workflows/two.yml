@@ -69,7 +69,11 @@ jobs:
 #           | :x: Number of Lines Missed                 | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
 #           | Total Number of Lines                      | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
 #         EOF
-         
+
+    - name: clean env
+      run: |
+        test > $GITHUB_ENV
+        
     - name: publish coverage job summary markdown
       run: |
         echo “${{ steps.jacoco_reporter.outputs.coverageSummary }}” >> $GITHUB_STEP_SUMMARY
