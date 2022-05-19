@@ -30,11 +30,6 @@ jobs:
     - name: Run Coverage
       run: ./gradlew testCoverage
 
-    - name: Upload Report
-      uses: 'actions/upload-artifact@v2'
-      with:
-        name: report.xml
-        path: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
 
     - name: Jacoco Report to PR
       id: jacoco
@@ -59,14 +54,6 @@ jobs:
         fail_below_threshold: false # set to false to pass below even when threshold is not met
         publish_only_summary: false. #set to true to publish only summary to avoid 65k problem
 
-      # uploads the coverage-report.md artifact    
-    - name: Upload Code Coverage Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: code-coverage-report
-        path: "*/coverage-results.md"
-        retention-days: 1  
-          
     - name: Get the Coverage info
       run: |
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
