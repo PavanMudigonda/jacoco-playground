@@ -70,9 +70,12 @@ jobs:
 #           | Total Number of Lines                      | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
 #         EOF
         
-    - name: publish coverage job summary markdown
+    - name: create coverage job markdown
       run: |
         echo ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> coverage_summary.md
+        
+    - name: publish summary
+      run: |
         cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
 
 #     - name: publish coverage job summary markdown
