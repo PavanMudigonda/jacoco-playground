@@ -71,4 +71,8 @@ jobs:
       run: |
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
-
+        
+    - name: job summary 
+      run: |
+        echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+        echo ${{ steps.jacoco_reporter.outputs.coverage_results_path }} >> $GITHUB_STEP_SUMMARY
