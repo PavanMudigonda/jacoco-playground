@@ -71,10 +71,12 @@ jobs:
 #         EOF
         
     - name: create coverage job markdown
+      shell: bash    
       run: |
         cat ${{ steps.jacoco_reporter.outputs.coverageSummary }}
         
     - name: publish summary
+      shell: bash
       run: |
         cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
 
