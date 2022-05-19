@@ -83,6 +83,6 @@ jobs:
           | Total Number of Lines                      | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
         EOF
          
-    - name: publish coverage job summary markdown
-      run: |
-        cat ${{ steps.jacoco_reporter.outputs.coverageSummary }}
+#     - name: publish coverage job summary markdown
+#       run: |
+#          echo ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> $GITHUB_STEP_SUMMARY
