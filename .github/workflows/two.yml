@@ -57,7 +57,7 @@ jobs:
         skip_check_run: true # set to false to publish check run
         minimum_coverage: 80
         fail_below_threshold: false # set to false to pass below even when threshold is not met
-        publish_only_summary: true. #set to true to publish only summary to avoid 65k problem
+        publish_only_summary: false. #set to true to publish only summary to avoid 65k problem
 
       # uploads the coverage-report.md artifact    
     - name: Upload Code Coverage Artifacts
