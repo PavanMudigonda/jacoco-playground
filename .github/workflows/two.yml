@@ -85,4 +85,4 @@ jobs:
          
     - name: publish coverage job summary markdown
       run: |
-        cat ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> coverage_summary1.md
+        cat ${{ steps.jacoco_reporter.outputs.coverageSummary }}
