@@ -72,7 +72,7 @@ jobs:
 
     - name: clean env
       run: |
-        test > $GITHUB_ENV
+        echo test='test' >> $GITHUB_ENV
         
     - name: publish coverage job summary markdown
       run: |
