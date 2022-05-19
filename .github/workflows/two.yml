@@ -72,7 +72,7 @@ jobs:
         
     - name: create coverage job markdown
       run: |
-        echo ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> coverage_summary.md
+        cat ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> coverage_summary.md
         
     - name: publish summary
       run: |
