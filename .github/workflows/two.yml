@@ -87,4 +87,4 @@ jobs:
          
     - name: publish coverage job summary markdown
       run: |
-        echo coverage_summary.md >> $GITHUB_STEP_SUMMARY
+        cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
