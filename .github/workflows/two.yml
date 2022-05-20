@@ -59,14 +59,18 @@ jobs:
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
         
-    - name: construct coverage job summary markdown
+#     - name: construct coverage job summary markdown
+#       run: |
+#         cat > coverage_summary.md <<EOF
+#           | Code Coverage Summary                      | Value                                                    |
+#           |--------------------------------------------|----------------------------------------------------------|
+#           | Code Coverage %                            | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
+#           | :heavy_check_mark: Number of Lines Covered | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
+#           | :x: Number of Lines Missed                 | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
+#           | Total Number of Lines                      | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
+#         EOF
+#         cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
+
+    - name: print output
       run: |
-        cat > coverage_summary.md <<EOF
-          | Code Coverage Summary                      | Value                                                    |
-          |--------------------------------------------|----------------------------------------------------------|
-          | Code Coverage %                            | ${{ steps.jacoco_reporter.outputs.coverage_percentage }} |
-          | :heavy_check_mark: Number of Lines Covered | ${{ steps.jacoco_reporter.outputs.covered_lines }}       |
-          | :x: Number of Lines Missed                 | ${{ steps.jacoco_reporter.outputs.missed_lines }}        |
-          | Total Number of Lines                      | ${{ steps.jacoco_reporter.outputs.total_lines }}         |
-        EOF
-        cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
+        cat ${{ steps.jacoco_reporter.outputs.coverageSummaryData }} >> $GITHUB_STEP_SUMMARY
