@@ -73,4 +73,4 @@ jobs:
 
     - name: print output
       run: |
-        echo ${{ steps.jacoco_reporter.outputs.coverageSummaryData }} >> $GITHUB_STEP_SUMMARY
+        echo ${{ steps.jacoco_reporter.outputs.coverageSummary }} >> $GITHUB_STEP_SUMMARY
