@@ -72,5 +72,4 @@ jobs:
 #         cat coverage_summary.md >> $GITHUB_STEP_SUMMARY
 
     - name: print output
-      run: |
-        echo ${{ steps.jacoco_reporter.outputs.coverageSummary }}
+      run: echo ${{ steps.jacoco_reporter.outputs.coverageSummary }}
