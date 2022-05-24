@@ -63,8 +63,8 @@ jobs:
       run: |
         echo "Total coverage coverage-overall ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
-        echo "Coverage coverage_percentage ${{ steps.jacoco.outputs.coverage_percentage }}"
-        echo "Coverage coveragePercentageString ${{ steps.jacoco.outputs.coveragePercentageString }}"
+        echo "Coverage coverage_percentage ${{ steps.jacoco_reporter.outputs.coverage_percentage }}"
+        echo "Coverage coveragePercentageString ${{ steps.jacoco_reporter.outputs.coveragePercentageString }}"
 
     - name: Publish Coverager Workflow Build Summary
       run: echo "${{ steps.jacoco_reporter.outputs.coverageSummary }}" >> $GITHUB_STEP_SUMMARY
