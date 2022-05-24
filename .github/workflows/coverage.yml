@@ -1,5 +1,5 @@
 name: Measure coverage
-# Test# 8
+# Test# 9
 
 on:
   push:
@@ -63,7 +63,7 @@ jobs:
       run: |
         echo "Total coverage coverage-overall ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
-        echo "Coverage coverage_percentage ${{ steps.jacoco_reporter.outputs.coveragePercentage }}"
+        echo "Coverage coveragePercentage ${{ steps.jacoco_reporter.outputs.coveragePercentage }}"
         echo "Coverage coveragePercentageString ${{ steps.jacoco_reporter.outputs.coveragePercentageString }}"
 
     - name: Publish Coverager Workflow Build Summary
