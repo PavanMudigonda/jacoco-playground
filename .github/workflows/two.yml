@@ -43,7 +43,7 @@ jobs:
         
     - name: JaCoCo Code Coverage Report
       id: jacoco_reporter
-      uses: PavanMudigonda/jacoco-reporter@v4.4
+      uses: PavanMudigonda/jacoco-reporter@v4.9
       with:
         coverage_results_path: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
         coverage_report_name: Coverage
@@ -54,6 +54,10 @@ jobs:
         fail_below_threshold: false # set to false to pass below even when threshold is not met
         publish_only_summary: false. #set to true to publish only summary to avoid 65k problem
 
+      # Publish Coverage Job Summary  # Optional
+    - name: Add Coverage Job Summary
+      run: echo "${{ steps.jacoco_reporter.outputs.coverageSummary }}" >> $GITHUB_STEP_SUMMARY
+       
     - name: Get the Coverage info
       run: |
         echo "Total coverage coverage-overall ${{ steps.jacoco.outputs.coverage-overall }}"
