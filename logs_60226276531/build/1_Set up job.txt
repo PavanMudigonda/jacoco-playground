@@ -1,0 +1,50 @@
+﻿2026-03-11T19:07:29.5164737Z Current runner version: '2.332.0'
+2026-03-11T19:07:29.5198146Z ##[group]Runner Image Provisioner
+2026-03-11T19:07:29.5199883Z Hosted Compute Agent
+2026-03-11T19:07:29.5201167Z Version: 20260213.493
+2026-03-11T19:07:29.5202390Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-11T19:07:29.5203610Z Build Date: 2026-02-13T00:28:41Z
+2026-03-11T19:07:29.5204813Z Worker ID: {0baba1f5-4984-4ee7-80f9-797196d7138b}
+2026-03-11T19:07:29.5205900Z Azure Region: centralus
+2026-03-11T19:07:29.5206874Z ##[endgroup]
+2026-03-11T19:07:29.5209490Z ##[group]Operating System
+2026-03-11T19:07:29.5210481Z Ubuntu
+2026-03-11T19:07:29.5211362Z 24.04.3
+2026-03-11T19:07:29.5213022Z LTS
+2026-03-11T19:07:29.5213968Z ##[endgroup]
+2026-03-11T19:07:29.5214829Z ##[group]Runner Image
+2026-03-11T19:07:29.5215850Z Image: ubuntu-24.04
+2026-03-11T19:07:29.5216863Z Version: 20260302.42.1
+2026-03-11T19:07:29.5218585Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260302.42/images/ubuntu/Ubuntu2404-Readme.md
+2026-03-11T19:07:29.5221984Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260302.42
+2026-03-11T19:07:29.5223596Z ##[endgroup]
+2026-03-11T19:07:29.5228429Z ##[group]GITHUB_TOKEN Permissions
+2026-03-11T19:07:29.5232339Z Actions: write
+2026-03-11T19:07:29.5233324Z ArtifactMetadata: write
+2026-03-11T19:07:29.5234303Z Attestations: write
+2026-03-11T19:07:29.5235182Z Checks: write
+2026-03-11T19:07:29.5236193Z Contents: write
+2026-03-11T19:07:29.5237080Z Deployments: write
+2026-03-11T19:07:29.5237909Z Discussions: write
+2026-03-11T19:07:29.5239074Z Issues: write
+2026-03-11T19:07:29.5239992Z Metadata: read
+2026-03-11T19:07:29.5240911Z Models: read
+2026-03-11T19:07:29.5242099Z Packages: write
+2026-03-11T19:07:29.5242949Z Pages: write
+2026-03-11T19:07:29.5243975Z PullRequests: write
+2026-03-11T19:07:29.5245174Z RepositoryProjects: write
+2026-03-11T19:07:29.5246115Z SecurityEvents: write
+2026-03-11T19:07:29.5246994Z Statuses: write
+2026-03-11T19:07:29.5247845Z ##[endgroup]
+2026-03-11T19:07:29.5250804Z Secret source: Actions
+2026-03-11T19:07:29.5252613Z Prepare workflow directory
+2026-03-11T19:07:29.5633812Z Prepare all required actions
+2026-03-11T19:07:29.5687160Z Getting action download info
+2026-03-11T19:07:30.0551872Z Download action repository 'actions/checkout@v6' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-03-11T19:07:30.2104182Z Download action repository 'actions/setup-java@v5' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+2026-03-11T19:07:30.8828102Z Download action repository 'actions/setup-java@v5.2.0' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+2026-03-11T19:07:31.5055325Z Download action repository 'actions/cache@v5' (SHA:cdf6c1fa76f9f475f3d7449005a359c84ca0f306)
+2026-03-11T19:07:31.6246895Z Download action repository 'actions/upload-artifact@v7' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+2026-03-11T19:07:32.2479373Z Download action repository 'madrapps/jacoco-report@v1.7.2' (SHA:50d3aff4548aa991e6753342d9ba291084e63848)
+2026-03-11T19:07:32.7564697Z Download action repository 'PavanMudigonda/jacoco-reporter@v5.1' (SHA:e07fdcb036db08aa3da8b5d61798b590d799ed24)
+2026-03-11T19:07:33.3753073Z Complete job name: build

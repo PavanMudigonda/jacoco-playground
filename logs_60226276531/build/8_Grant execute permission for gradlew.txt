@@ -1,0 +1,8 @@
+﻿2026-03-11T19:07:41.8121341Z ##[group]Run chmod +x gradlew
+2026-03-11T19:07:41.8122371Z [36;1mchmod +x gradlew[0m
+2026-03-11T19:07:41.8173711Z shell: /usr/bin/bash -e {0}
+2026-03-11T19:07:41.8173965Z env:
+2026-03-11T19:07:41.8174228Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.8174670Z   JAVA_HOME_8_X64: /opt/hostedtoolcache/Java_Corretto_jdk/8.482.08-1/x64
+2026-03-11T19:07:41.8175116Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.8175470Z ##[endgroup]

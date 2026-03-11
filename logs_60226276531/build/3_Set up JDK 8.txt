@@ -1,0 +1,33 @@
+﻿2026-03-11T19:07:34.1075929Z ##[group]Run actions/setup-java@v5
+2026-03-11T19:07:34.1076233Z with:
+2026-03-11T19:07:34.1076403Z   java-version: 8
+2026-03-11T19:07:34.1076592Z   distribution: corretto
+2026-03-11T19:07:34.1076797Z   java-package: jdk
+2026-03-11T19:07:34.1076995Z   check-latest: false
+2026-03-11T19:07:34.1077185Z   server-id: github
+2026-03-11T19:07:34.1077382Z   server-username: GITHUB_ACTOR
+2026-03-11T19:07:34.1077617Z   server-password: GITHUB_TOKEN
+2026-03-11T19:07:34.1077839Z   overwrite-settings: true
+2026-03-11T19:07:34.1078051Z   job-status: success
+2026-03-11T19:07:34.1078357Z   token: ***
+2026-03-11T19:07:34.1078529Z ##[endgroup]
+2026-03-11T19:07:34.2578138Z ##[group]Installed distributions
+2026-03-11T19:07:34.2604986Z Trying to resolve the latest version from remote
+2026-03-11T19:07:34.3617852Z Resolved latest version as 8.482.08+1
+2026-03-11T19:07:34.3618536Z Trying to download...
+2026-03-11T19:07:34.3619664Z Downloading Java 8.482.08+1 (Corretto) from https://corretto.aws/downloads/resources/8.482.08.1/amazon-corretto-8.482.08.1-linux-x64.tar.gz ...
+2026-03-11T19:07:35.1016836Z Extracting Java archive...
+2026-03-11T19:07:35.1129166Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/50149ff8-867d-4189-9131-ac3ad38688c3 -f /home/runner/work/_temp/2b1ade92-3a57-415a-ad42-b346817e4574
+2026-03-11T19:07:36.7642244Z Java 8.482.08+1 was downloaded
+2026-03-11T19:07:36.7642818Z Setting Java 8.482.08+1 as the default
+2026-03-11T19:07:36.7643394Z Creating toolchains.xml for JDK version 8 from corretto
+2026-03-11T19:07:36.7725753Z Writing to /home/runner/.m2/toolchains.xml
+2026-03-11T19:07:36.7726235Z 
+2026-03-11T19:07:36.7726373Z Java configuration:
+2026-03-11T19:07:36.7726713Z   Distribution: corretto
+2026-03-11T19:07:36.7727374Z   Version: 8.482.08+1
+2026-03-11T19:07:36.7730122Z   Path: /opt/hostedtoolcache/Java_Corretto_jdk/8.482.08-1/x64
+2026-03-11T19:07:36.7731524Z 
+2026-03-11T19:07:36.7732202Z ##[endgroup]
+2026-03-11T19:07:36.7748433Z Creating settings.xml with server-id: github
+2026-03-11T19:07:36.7748870Z Writing to /home/runner/.m2/settings.xml
