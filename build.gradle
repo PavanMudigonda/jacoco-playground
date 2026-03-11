@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
-    id 'org.jetbrains.kotlin.jvm' version '1.4.30'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
     id "org.sonarqube" version "3.4.0.2513"
     
 }
@@ -23,8 +23,16 @@ test {
     useJUnitPlatform()
 }
 
+compileKotlin {
+    kotlinOptions.jvmTarget = '17'
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '17'
+}
+
 jacoco {
-    toolVersion '0.8.0'
+    toolVersion '0.8.11'
 }
 
 sonarqube {
@@ -36,7 +44,7 @@ sonarqube {
 }
 
 tasks.withType(Test) {
-    jacoco.includeNoLocationClasses = true
+    jacoco.includeNoLocationClasses = false
 }
 
 tasks.create(name: "testCoverage", type: JacocoReport, dependsOn: "test") {

@@ -1,0 +1,94 @@
+﻿2026-03-11T18:53:36.2287723Z ##[group]Run ./gradlew testCoverage
+2026-03-11T18:53:36.2288080Z [36;1m./gradlew testCoverage[0m
+2026-03-11T18:53:36.2335253Z shell: /usr/bin/bash -e {0}
+2026-03-11T18:53:36.2335499Z env:
+2026-03-11T18:53:36.2335759Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.2336202Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.2336548Z ##[endgroup]
+2026-03-11T18:53:36.3702651Z Downloading https://services.gradle.org/distributions/gradle-7.3.1-bin.zip
+2026-03-11T18:53:37.8988041Z ...........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
+2026-03-11T18:53:38.8448858Z 
+2026-03-11T18:53:38.8449922Z Welcome to Gradle 7.3.1!
+2026-03-11T18:53:38.8450567Z 
+2026-03-11T18:53:38.8450883Z Here are the highlights of this release:
+2026-03-11T18:53:38.8451493Z  - Easily declare new test suites in Java projects
+2026-03-11T18:53:38.8452012Z  - Support for Java 17
+2026-03-11T18:53:38.8452443Z  - Support for Scala 3
+2026-03-11T18:53:38.8452666Z 
+2026-03-11T18:53:38.8467809Z For more details see https://docs.gradle.org/7.3.1/release-notes.html
+2026-03-11T18:53:38.8469190Z 
+2026-03-11T18:53:38.9434653Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-03-11T18:53:55.9448763Z e: java.lang.ExceptionInInitializerError
+2026-03-11T18:53:55.9452150Z 	at org.jetbrains.kotlin.com.intellij.pom.java.LanguageLevel.<clinit>(LanguageLevel.java:25)
+2026-03-11T18:53:55.9478897Z 	at org.jetbrains.kotlin.com.intellij.core.CoreLanguageLevelProjectExtension.<init>(CoreLanguageLevelProjectExtension.java:26)
+2026-03-11T18:53:55.9480661Z 	at org.jetbrains.kotlin.com.intellij.core.JavaCoreProjectEnvironment.<init>(JavaCoreProjectEnvironment.java:42)
+2026-03-11T18:53:55.9481554Z 
+2026-03-11T18:53:55.9482002Z > Task :compileKotlin FAILED
+2026-03-11T18:53:55.9486128Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreProjectEnvironment.<init>(KotlinCoreProjectEnvironment.kt:26)
+2026-03-11T18:53:55.9492573Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment$ProjectEnvironment.<init>(KotlinCoreEnvironment.kt:121)
+2026-03-11T18:53:55.9498964Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment$Companion.createForProduction(KotlinCoreEnvironment.kt:425)
+2026-03-11T18:53:55.9504077Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.createCoreEnvironment(K2JVMCompiler.kt:226)
+2026-03-11T18:53:55.9505876Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:152)
+2026-03-11T18:53:55.9509063Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:52)
+2026-03-11T18:53:55.9510509Z 	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:88)
+2026-03-11T18:53:55.9512174Z 	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:44)
+2026-03-11T18:53:55.9514005Z 	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:98)
+2026-03-11T18:53:55.9552614Z 	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:386)
+2026-03-11T18:53:55.9553620Z 
+2026-03-11T18:53:55.9554433Z 	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:110)
+2026-03-11T18:53:55.9556112Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileIncrementally(IncrementalCompilerRunner.kt:286)
+2026-03-11T18:53:55.9557941Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl$rebuild(IncrementalCompilerRunner.kt:99)
+2026-03-11T18:53:55.9559937Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:114)
+2026-03-11T18:53:55.9561425Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:74)
+2026-03-11T18:53:55.9562883Z 	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:607)
+2026-03-11T18:53:55.9564370Z 	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:96)
+2026-03-11T18:53:55.9565945Z 	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1659)
+2026-03-11T18:53:55.9567028Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026-03-11T18:53:55.9568306Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2026-03-11T18:53:55.9569574Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026-03-11T18:53:55.9570571Z 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+2026-03-11T18:53:55.9571328Z 	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+2026-03-11T18:53:55.9572090Z 	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+2026-03-11T18:53:55.9572754Z 	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+2026-03-11T18:53:55.9573552Z 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+2026-03-11T18:53:55.9574402Z 	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+2026-03-11T18:53:55.9575272Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+2026-03-11T18:53:55.9576265Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+2026-03-11T18:53:55.9598600Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+2026-03-11T18:53:55.9599820Z 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2026-03-11T18:53:55.9600870Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+2026-03-11T18:53:55.9601981Z 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2026-03-11T18:53:55.9603125Z 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2026-03-11T18:53:55.9603951Z 	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-03-11T18:53:55.9605742Z Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected void java.util.ResourceBundle.setParent(java.util.ResourceBundle) accessible: module java.base does not "opens java.util" to unnamed module @4c7a7078
+2026-03-11T18:53:55.9618171Z 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+2026-03-11T18:53:55.9619476Z 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+2026-03-11T18:53:55.9620576Z 	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+2026-03-11T18:53:55.9621471Z 	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+2026-03-11T18:53:55.9622535Z 	at org.jetbrains.kotlin.com.intellij.util.ReflectionUtil.makeAccessible(ReflectionUtil.java:252)
+2026-03-11T18:53:55.9623871Z 	at org.jetbrains.kotlin.com.intellij.util.ReflectionUtil.getDeclaredMethod(ReflectionUtil.java:269)
+2026-03-11T18:53:55.9625083Z 	at org.jetbrains.kotlin.com.intellij.DynamicBundle.<clinit>(DynamicBundle.java:22)
+2026-03-11T18:53:55.9625796Z 	... 38 more
+2026-03-11T18:53:55.9625975Z 
+2026-03-11T18:53:55.9625987Z 
+2026-03-11T18:53:55.9626148Z FAILURE: Build failed with an exception.
+2026-03-11T18:53:55.9626458Z 
+2026-03-11T18:53:55.9626583Z * What went wrong:
+2026-03-11T18:53:55.9626933Z Execution failed for task ':compileKotlin'.
+2026-03-11T18:53:55.9642092Z > Internal compiler error. See log for more details
+2026-03-11T18:53:55.9642464Z 
+2026-03-11T18:53:55.9642570Z * Try:
+2026-03-11T18:53:55.9642945Z > Run with --stacktrace option to get the stack trace.
+2026-03-11T18:53:55.9643532Z > Run with --info or --debug option to get more log output.
+2026-03-11T18:53:55.9644061Z > Run with --scan to get full insights.
+2026-03-11T18:53:55.9644356Z 
+2026-03-11T18:53:55.9644551Z * Get more help at https://help.gradle.org
+2026-03-11T18:53:55.9644927Z 
+2026-03-11T18:53:55.9645047Z BUILD FAILED in 19s
+2026-03-11T18:53:55.9645878Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+2026-03-11T18:53:55.9646479Z 
+2026-03-11T18:53:55.9657478Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-03-11T18:53:55.9658397Z 
+2026-03-11T18:53:55.9658913Z See https://docs.gradle.org/7.3.1/userguide/command_line_interface.html#sec:command_line_warnings
+2026-03-11T18:53:55.9659702Z 1 actionable task: 1 executed
+2026-03-11T18:53:56.3505322Z ##[error]Process completed with exit code 1.

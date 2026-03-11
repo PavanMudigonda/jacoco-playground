@@ -1,0 +1,180 @@
+﻿2026-03-11T18:53:28.0372701Z Current runner version: '2.332.0'
+2026-03-11T18:53:28.0406451Z ##[group]Runner Image Provisioner
+2026-03-11T18:53:28.0407761Z Hosted Compute Agent
+2026-03-11T18:53:28.0408766Z Version: 20260213.493
+2026-03-11T18:53:28.0409933Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-11T18:53:28.0411124Z Build Date: 2026-02-13T00:28:41Z
+2026-03-11T18:53:28.0412262Z Worker ID: {7d7d6ba9-cd21-45dd-90fe-28fb71a0a404}
+2026-03-11T18:53:28.0413419Z Azure Region: eastus2
+2026-03-11T18:53:28.0414508Z ##[endgroup]
+2026-03-11T18:53:28.0416831Z ##[group]Operating System
+2026-03-11T18:53:28.0418188Z Ubuntu
+2026-03-11T18:53:28.0419111Z 24.04.3
+2026-03-11T18:53:28.0419836Z LTS
+2026-03-11T18:53:28.0420599Z ##[endgroup]
+2026-03-11T18:53:28.0421577Z ##[group]Runner Image
+2026-03-11T18:53:28.0422451Z Image: ubuntu-24.04
+2026-03-11T18:53:28.0423266Z Version: 20260302.42.1
+2026-03-11T18:53:28.0425498Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260302.42/images/ubuntu/Ubuntu2404-Readme.md
+2026-03-11T18:53:28.0428543Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260302.42
+2026-03-11T18:53:28.0430155Z ##[endgroup]
+2026-03-11T18:53:28.0434816Z ##[group]GITHUB_TOKEN Permissions
+2026-03-11T18:53:28.0438501Z Actions: write
+2026-03-11T18:53:28.0439434Z ArtifactMetadata: write
+2026-03-11T18:53:28.0440455Z Attestations: write
+2026-03-11T18:53:28.0441584Z Checks: write
+2026-03-11T18:53:28.0442466Z Contents: write
+2026-03-11T18:53:28.0443348Z Deployments: write
+2026-03-11T18:53:28.0444366Z Discussions: write
+2026-03-11T18:53:28.0445316Z Issues: write
+2026-03-11T18:53:28.0446488Z Metadata: read
+2026-03-11T18:53:28.0447537Z Models: read
+2026-03-11T18:53:28.0448472Z Packages: write
+2026-03-11T18:53:28.0449299Z Pages: write
+2026-03-11T18:53:28.0450457Z PullRequests: write
+2026-03-11T18:53:28.0451517Z RepositoryProjects: write
+2026-03-11T18:53:28.0452523Z SecurityEvents: write
+2026-03-11T18:53:28.0453543Z Statuses: write
+2026-03-11T18:53:28.0454412Z ##[endgroup]
+2026-03-11T18:53:28.0457574Z Secret source: Actions
+2026-03-11T18:53:28.0459085Z Prepare workflow directory
+2026-03-11T18:53:28.0920965Z Prepare all required actions
+2026-03-11T18:53:28.0976540Z Getting action download info
+2026-03-11T18:53:28.5412072Z Download action repository 'actions/checkout@v6' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-03-11T18:53:28.7357479Z Download action repository 'actions/setup-java@v5' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+2026-03-11T18:53:29.0893690Z Download action repository 'actions/setup-java@v5.2.0' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+2026-03-11T18:53:29.4124668Z Download action repository 'actions/cache@v5' (SHA:cdf6c1fa76f9f475f3d7449005a359c84ca0f306)
+2026-03-11T18:53:29.5975058Z Download action repository 'actions/upload-artifact@v7' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+2026-03-11T18:53:29.8956044Z Download action repository 'madrapps/jacoco-report@v1.7.2' (SHA:50d3aff4548aa991e6753342d9ba291084e63848)
+2026-03-11T18:53:30.1750250Z Download action repository 'PavanMudigonda/jacoco-reporter@v5.1' (SHA:e07fdcb036db08aa3da8b5d61798b590d799ed24)
+2026-03-11T18:53:30.6029150Z Complete job name: build
+2026-03-11T18:53:30.7019144Z ##[group]Run actions/checkout@v6
+2026-03-11T18:53:30.7020377Z with:
+2026-03-11T18:53:30.7021215Z   repository: PavanMudigonda/jacoco-playground
+2026-03-11T18:53:30.7022517Z   token: ***
+2026-03-11T18:53:30.7023223Z   ssh-strict: true
+2026-03-11T18:53:30.7023946Z   ssh-user: git
+2026-03-11T18:53:30.7024699Z   persist-credentials: true
+2026-03-11T18:53:30.7025551Z   clean: true
+2026-03-11T18:53:30.7026488Z   sparse-checkout-cone-mode: true
+2026-03-11T18:53:30.7027398Z   fetch-depth: 1
+2026-03-11T18:53:30.7028118Z   fetch-tags: false
+2026-03-11T18:53:30.7028864Z   show-progress: true
+2026-03-11T18:53:30.7029613Z   lfs: false
+2026-03-11T18:53:30.7030297Z   submodules: false
+2026-03-11T18:53:30.7031065Z   set-safe-directory: true
+2026-03-11T18:53:30.7032151Z ##[endgroup]
+2026-03-11T18:53:30.7986209Z Syncing repository: PavanMudigonda/jacoco-playground
+2026-03-11T18:53:30.7989108Z ##[group]Getting Git version info
+2026-03-11T18:53:30.7990794Z Working directory is '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T18:53:30.7992771Z [command]/usr/bin/git version
+2026-03-11T18:53:30.8046850Z git version 2.53.0
+2026-03-11T18:53:30.8070058Z ##[endgroup]
+2026-03-11T18:53:30.8084528Z Temporarily overriding HOME='/home/runner/work/_temp/c8f19e37-6f92-4177-9625-5d25235fcca9' before making global git config changes
+2026-03-11T18:53:30.8088530Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-11T18:53:30.8092126Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:30.8132836Z Deleting the contents of '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T18:53:30.8136999Z ##[group]Initializing the repository
+2026-03-11T18:53:30.8141803Z [command]/usr/bin/git init /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:30.8255005Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-11T18:53:30.8258679Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-11T18:53:30.8261591Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-11T18:53:30.8263846Z hint: call:
+2026-03-11T18:53:30.8265028Z hint:
+2026-03-11T18:53:30.8266458Z hint: 	git config --global init.defaultBranch <name>
+2026-03-11T18:53:30.8267570Z hint:
+2026-03-11T18:53:30.8268868Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-11T18:53:30.8271445Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-11T18:53:30.8272795Z hint:
+2026-03-11T18:53:30.8273491Z hint: 	git branch -m <name>
+2026-03-11T18:53:30.8274317Z hint:
+2026-03-11T18:53:30.8275602Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-11T18:53:30.8277944Z Initialized empty Git repository in /home/runner/work/jacoco-playground/jacoco-playground/.git/
+2026-03-11T18:53:30.8281166Z [command]/usr/bin/git remote add origin https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T18:53:30.8307888Z ##[endgroup]
+2026-03-11T18:53:30.8309884Z ##[group]Disabling automatic garbage collection
+2026-03-11T18:53:30.8311916Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-11T18:53:30.8340712Z ##[endgroup]
+2026-03-11T18:53:30.8342462Z ##[group]Setting up auth
+2026-03-11T18:53:30.8343393Z Removing SSH command configuration
+2026-03-11T18:53:30.8347915Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-11T18:53:30.8379975Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-11T18:53:30.8773779Z Removing HTTP extra header
+2026-03-11T18:53:30.8779263Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-11T18:53:30.8811036Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-11T18:53:30.9039519Z Removing includeIf entries pointing to credentials config files
+2026-03-11T18:53:30.9045621Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-11T18:53:30.9081128Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-11T18:53:30.9319755Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-11T18:53:30.9357233Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:30.9391862Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:30.9423667Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:30.9455540Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:30.9487736Z ##[endgroup]
+2026-03-11T18:53:30.9489773Z ##[group]Fetching the repository
+2026-03-11T18:53:30.9497381Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e141fe6a315efa5e6da47abd35cba3578ba8d445:refs/remotes/origin/main
+2026-03-11T18:53:31.1435052Z From https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T18:53:31.1438046Z  * [new ref]         e141fe6a315efa5e6da47abd35cba3578ba8d445 -> origin/main
+2026-03-11T18:53:31.1476290Z [command]/usr/bin/git branch --list --remote origin/main
+2026-03-11T18:53:31.1510029Z   origin/main
+2026-03-11T18:53:31.1518917Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-03-11T18:53:31.1547246Z e141fe6a315efa5e6da47abd35cba3578ba8d445
+2026-03-11T18:53:31.1553737Z ##[endgroup]
+2026-03-11T18:53:31.1556192Z ##[group]Determining the checkout info
+2026-03-11T18:53:31.1558764Z ##[endgroup]
+2026-03-11T18:53:31.1560253Z [command]/usr/bin/git sparse-checkout disable
+2026-03-11T18:53:31.1601482Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-11T18:53:31.1631354Z ##[group]Checking out the ref
+2026-03-11T18:53:31.1634656Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-11T18:53:31.1712027Z Switched to a new branch 'main'
+2026-03-11T18:53:31.1716478Z branch 'main' set up to track 'origin/main'.
+2026-03-11T18:53:31.1724057Z ##[endgroup]
+2026-03-11T18:53:31.1762786Z [command]/usr/bin/git log -1 --format=%H
+2026-03-11T18:53:31.1788319Z e141fe6a315efa5e6da47abd35cba3578ba8d445
+2026-03-11T18:53:31.2135624Z ##[group]Run actions/setup-java@v5
+2026-03-11T18:53:31.2136817Z with:
+2026-03-11T18:53:31.2137489Z   java-version: 1.8
+2026-03-11T18:53:31.2138253Z   java-package: jdk
+2026-03-11T18:53:31.2139010Z   check-latest: false
+2026-03-11T18:53:31.2139788Z   server-id: github
+2026-03-11T18:53:31.2140562Z   server-username: GITHUB_ACTOR
+2026-03-11T18:53:31.2141478Z   server-password: GITHUB_TOKEN
+2026-03-11T18:53:31.2142412Z   overwrite-settings: true
+2026-03-11T18:53:31.2143265Z   job-status: success
+2026-03-11T18:53:31.2144256Z   token: ***
+2026-03-11T18:53:31.2144953Z ##[endgroup]
+2026-03-11T18:53:31.3719609Z ##[error]Input required and not supplied: distribution
+2026-03-11T18:53:31.4073260Z Post job cleanup.
+2026-03-11T18:53:31.5745994Z Post job cleanup.
+2026-03-11T18:53:31.6561635Z [command]/usr/bin/git version
+2026-03-11T18:53:31.6598820Z git version 2.53.0
+2026-03-11T18:53:31.6638072Z Temporarily overriding HOME='/home/runner/work/_temp/53f1cdbf-d85a-4e09-8794-0b1af7ae34cf' before making global git config changes
+2026-03-11T18:53:31.6640671Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-11T18:53:31.6645095Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:31.6676045Z Removing SSH command configuration
+2026-03-11T18:53:31.6682683Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-11T18:53:31.6743001Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-11T18:53:31.6985056Z Removing HTTP extra header
+2026-03-11T18:53:31.6990879Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-11T18:53:31.7028431Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-11T18:53:31.7266444Z Removing includeIf entries pointing to credentials config files
+2026-03-11T18:53:31.7272505Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-11T18:53:31.7298312Z includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path
+2026-03-11T18:53:31.7302041Z includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path
+2026-03-11T18:53:31.7305110Z includeif.gitdir:/github/workspace/.git.path
+2026-03-11T18:53:31.7307542Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-11T18:53:31.7313225Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path
+2026-03-11T18:53:31.7333449Z /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7344772Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7380025Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path
+2026-03-11T18:53:31.7402247Z /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7412374Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7444454Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-03-11T18:53:31.7467331Z /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7475876Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7508284Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-11T18:53:31.7529778Z /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7541072Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config
+2026-03-11T18:53:31.7576292Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-11T18:53:31.7808918Z Removing credentials config '/home/runner/work/_temp/git-credentials-00bd4942-4972-4aea-8cc3-fb4bcf72b131.config'
+2026-03-11T18:53:31.7953175Z Cleaning up orphan processes
