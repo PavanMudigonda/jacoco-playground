@@ -1,0 +1,25 @@
+﻿2026-03-11T19:04:34.2093828Z ##[group]Run actions/upload-artifact@v7.0.0
+2026-03-11T19:04:34.2094138Z with:
+2026-03-11T19:04:34.2094323Z   name: report.xml
+2026-03-11T19:04:34.2094774Z   path: /home/runner/work/jacoco-playground/jacoco-playground/build/reports/jacoco/testCoverage/testCoverage.xml
+2026-03-11T19:04:34.2095303Z   if-no-files-found: warn
+2026-03-11T19:04:34.2095521Z   compression-level: 6
+2026-03-11T19:04:34.2095729Z   overwrite: false
+2026-03-11T19:04:34.2095923Z   include-hidden-files: false
+2026-03-11T19:04:34.2096145Z   archive: true
+2026-03-11T19:04:34.2096311Z env:
+2026-03-11T19:04:34.2096578Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:04:34.2097004Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:04:34.2097519Z ##[endgroup]
+2026-03-11T19:04:34.3543616Z With the provided path, there will be 1 file uploaded
+2026-03-11T19:04:34.3549673Z Artifact name is valid!
+2026-03-11T19:04:34.3550219Z Root directory input is valid!
+2026-03-11T19:04:34.3993020Z Uploading artifact: report.xml.zip
+2026-03-11T19:04:34.4038527Z Beginning upload of artifact content to blob storage
+2026-03-11T19:04:34.4932905Z Uploaded bytes 1042
+2026-03-11T19:04:34.5160507Z Finished uploading artifact content to blob storage!
+2026-03-11T19:04:34.5162148Z SHA256 digest of uploaded artifact is 33e44f7db713479dace55111d03de8e19ff8f02c87292f3361f827fe6c3c99f0
+2026-03-11T19:04:34.5163073Z Finalizing artifact upload
+2026-03-11T19:04:34.6118753Z Artifact report.xml successfully finalized. Artifact ID 5877460615
+2026-03-11T19:04:34.6120197Z Artifact report.xml has been successfully uploaded! Final size is 1042 bytes. Artifact ID is 5877460615
+2026-03-11T19:04:34.6125979Z Artifact download URL: https://github.com/PavanMudigonda/jacoco-playground/actions/runs/22969648612/artifacts/5877460615

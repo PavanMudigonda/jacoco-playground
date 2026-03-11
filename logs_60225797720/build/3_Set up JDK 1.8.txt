@@ -1,0 +1,17 @@
+﻿2026-03-11T19:04:01.1512363Z ##[group]Run actions/setup-java@v5
+2026-03-11T19:04:01.1512647Z with:
+2026-03-11T19:04:01.1512831Z   java-version: 1.8
+2026-03-11T19:04:01.1513025Z   distribution: corretto
+2026-03-11T19:04:01.1513233Z   java-package: jdk
+2026-03-11T19:04:01.1513426Z   check-latest: false
+2026-03-11T19:04:01.1513611Z   server-id: github
+2026-03-11T19:04:01.1513807Z   server-username: GITHUB_ACTOR
+2026-03-11T19:04:01.1514205Z   server-password: GITHUB_TOKEN
+2026-03-11T19:04:01.1514436Z   overwrite-settings: true
+2026-03-11T19:04:01.1514649Z   job-status: success
+2026-03-11T19:04:01.1514961Z   token: ***
+2026-03-11T19:04:01.1515152Z ##[endgroup]
+2026-03-11T19:04:01.3107153Z ##[group]Installed distributions
+2026-03-11T19:04:01.3133886Z Trying to resolve the latest version from remote
+2026-03-11T19:04:01.3158665Z ##[error]Java setup process failed due to: Only major versions are supported
+2026-03-11T19:04:01.3167232Z ##[error]Only major versions are supported
