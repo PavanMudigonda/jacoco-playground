@@ -1,0 +1,41 @@
+﻿2026-03-11T19:04:03.3432765Z ##[group]Run ./gradlew testCoverage
+2026-03-11T19:04:03.3433078Z [36;1m./gradlew testCoverage[0m
+2026-03-11T19:04:03.3478274Z shell: /usr/bin/bash -e {0}
+2026-03-11T19:04:03.3478517Z env:
+2026-03-11T19:04:03.3478778Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:04:03.3479214Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:04:03.3479553Z ##[endgroup]
+2026-03-11T19:04:03.5691057Z Downloading https://services.gradle.org/distributions/gradle-7.6.4-bin.zip
+2026-03-11T19:04:05.2571060Z ...........10%............20%............30%...........40%............50%............60%...........70%............80%............90%............100%
+2026-03-11T19:04:06.2539925Z 
+2026-03-11T19:04:06.2541612Z Welcome to Gradle 7.6.4!
+2026-03-11T19:04:06.2543406Z 
+2026-03-11T19:04:06.2543708Z Here are the highlights of this release:
+2026-03-11T19:04:06.2556075Z  - Added support for Java 19.
+2026-03-11T19:04:06.2556609Z  - Introduced `--rerun` flag for individual task rerun.
+2026-03-11T19:04:06.2557342Z  - Improved dependency block for test suites to be strongly typed.
+2026-03-11T19:04:06.2558037Z  - Added a pluggable system for Java toolchains provisioning.
+2026-03-11T19:04:06.2558480Z 
+2026-03-11T19:04:06.2558843Z For more details see https://docs.gradle.org/7.6.4/release-notes.html
+2026-03-11T19:04:06.2559336Z 
+2026-03-11T19:04:06.3533304Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-03-11T19:04:23.3548222Z > Task :checkKotlinGradlePluginConfigurationErrors
+2026-03-11T19:04:26.5537595Z > Task :processResources NO-SOURCE
+2026-03-11T19:04:26.5540977Z > Task :processTestResources NO-SOURCE
+2026-03-11T19:04:29.7535621Z > Task :compileKotlin
+2026-03-11T19:04:30.8535952Z > Task :compileJava
+2026-03-11T19:04:30.8542441Z > Task :classes
+2026-03-11T19:04:32.3554056Z > Task :compileTestKotlin
+2026-03-11T19:04:32.5533446Z > Task :compileTestJava
+2026-03-11T19:04:32.5539242Z > Task :testClasses
+2026-03-11T19:04:34.4530995Z > Task :test
+2026-03-11T19:04:35.3535255Z > Task :testCoverage
+2026-03-11T19:04:35.3539942Z 
+2026-03-11T19:04:35.3540519Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+2026-03-11T19:04:35.3541167Z 
+2026-03-11T19:04:35.3542109Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-03-11T19:04:35.3543003Z 
+2026-03-11T19:04:35.3543664Z See https://docs.gradle.org/7.6.4/userguide/command_line_interface.html#sec:command_line_warnings
+2026-03-11T19:04:35.3544344Z 
+2026-03-11T19:04:35.3544489Z BUILD SUCCESSFUL in 31s
+2026-03-11T19:04:35.3544864Z 7 actionable tasks: 7 executed

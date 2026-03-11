@@ -1,0 +1,83 @@
+﻿2026-03-11T19:03:56.9567342Z ##[group]Run actions/checkout@v6
+2026-03-11T19:03:56.9568981Z with:
+2026-03-11T19:03:56.9569888Z   repository: PavanMudigonda/jacoco-playground
+2026-03-11T19:03:56.9571325Z   token: ***
+2026-03-11T19:03:56.9572079Z   ssh-strict: true
+2026-03-11T19:03:56.9572836Z   ssh-user: git
+2026-03-11T19:03:56.9573601Z   persist-credentials: true
+2026-03-11T19:03:56.9574453Z   clean: true
+2026-03-11T19:03:56.9575215Z   sparse-checkout-cone-mode: true
+2026-03-11T19:03:56.9576166Z   fetch-depth: 1
+2026-03-11T19:03:56.9576917Z   fetch-tags: false
+2026-03-11T19:03:56.9577699Z   show-progress: true
+2026-03-11T19:03:56.9578649Z   lfs: false
+2026-03-11T19:03:56.9579372Z   submodules: false
+2026-03-11T19:03:56.9580180Z   set-safe-directory: true
+2026-03-11T19:03:56.9581318Z ##[endgroup]
+2026-03-11T19:03:57.0624868Z Syncing repository: PavanMudigonda/jacoco-playground
+2026-03-11T19:03:57.0627875Z ##[group]Getting Git version info
+2026-03-11T19:03:57.0629714Z Working directory is '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T19:03:57.0632001Z [command]/usr/bin/git version
+2026-03-11T19:03:57.0677426Z git version 2.53.0
+2026-03-11T19:03:57.0704278Z ##[endgroup]
+2026-03-11T19:03:57.0722129Z Temporarily overriding HOME='/home/runner/work/_temp/8a382777-677d-44c9-b433-9f6d2936fe4f' before making global git config changes
+2026-03-11T19:03:57.0726658Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-11T19:03:57.0730944Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T19:03:57.0777045Z Deleting the contents of '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T19:03:57.0782334Z ##[group]Initializing the repository
+2026-03-11T19:03:57.0788799Z [command]/usr/bin/git init /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T19:03:57.0946005Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-11T19:03:57.0949656Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-11T19:03:57.0952729Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-11T19:03:57.0955189Z hint: call:
+2026-03-11T19:03:57.0956390Z hint:
+2026-03-11T19:03:57.0957902Z hint: 	git config --global init.defaultBranch <name>
+2026-03-11T19:03:57.0959941Z hint:
+2026-03-11T19:03:57.0961693Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-11T19:03:57.0964560Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-11T19:03:57.0966945Z hint:
+2026-03-11T19:03:57.0968524Z hint: 	git branch -m <name>
+2026-03-11T19:03:57.0970022Z hint:
+2026-03-11T19:03:57.0971749Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-11T19:03:57.0975232Z Initialized empty Git repository in /home/runner/work/jacoco-playground/jacoco-playground/.git/
+2026-03-11T19:03:57.0979594Z [command]/usr/bin/git remote add origin https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T19:03:57.1022104Z ##[endgroup]
+2026-03-11T19:03:57.1024475Z ##[group]Disabling automatic garbage collection
+2026-03-11T19:03:57.1026590Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-11T19:03:57.1068106Z ##[endgroup]
+2026-03-11T19:03:57.1071429Z ##[group]Setting up auth
+2026-03-11T19:03:57.1073447Z Removing SSH command configuration
+2026-03-11T19:03:57.1078705Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-11T19:03:57.1111126Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-11T19:03:57.1559225Z Removing HTTP extra header
+2026-03-11T19:03:57.1567340Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-11T19:03:57.1607336Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-11T19:03:57.1860005Z Removing includeIf entries pointing to credentials config files
+2026-03-11T19:03:57.1867546Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-11T19:03:57.1907354Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-11T19:03:57.2169000Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-cae9f9cd-dde3-4c93-80bb-524d0bad2a87.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-11T19:03:57.2213681Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path /home/runner/work/_temp/git-credentials-cae9f9cd-dde3-4c93-80bb-524d0bad2a87.config
+2026-03-11T19:03:57.2249072Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-cae9f9cd-dde3-4c93-80bb-524d0bad2a87.config
+2026-03-11T19:03:57.2283719Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-cae9f9cd-dde3-4c93-80bb-524d0bad2a87.config
+2026-03-11T19:03:57.2318431Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-cae9f9cd-dde3-4c93-80bb-524d0bad2a87.config
+2026-03-11T19:03:57.2349861Z ##[endgroup]
+2026-03-11T19:03:57.2351510Z ##[group]Fetching the repository
+2026-03-11T19:03:57.2360106Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1293a7952f91d7908d81f62ab7d2cb47b117606b:refs/remotes/origin/main
+2026-03-11T19:03:57.4651797Z From https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T19:03:57.4655581Z  * [new ref]         1293a7952f91d7908d81f62ab7d2cb47b117606b -> origin/main
+2026-03-11T19:03:57.4769544Z [command]/usr/bin/git branch --list --remote origin/main
+2026-03-11T19:03:57.4772199Z   origin/main
+2026-03-11T19:03:57.4775392Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-03-11T19:03:57.4777436Z 1293a7952f91d7908d81f62ab7d2cb47b117606b
+2026-03-11T19:03:57.4781970Z ##[endgroup]
+2026-03-11T19:03:57.4784067Z ##[group]Determining the checkout info
+2026-03-11T19:03:57.4786342Z ##[endgroup]
+2026-03-11T19:03:57.4787239Z [command]/usr/bin/git sparse-checkout disable
+2026-03-11T19:03:57.4833002Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-11T19:03:57.4866411Z ##[group]Checking out the ref
+2026-03-11T19:03:57.4872847Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-11T19:03:57.4959576Z Switched to a new branch 'main'
+2026-03-11T19:03:57.4961465Z branch 'main' set up to track 'origin/main'.
+2026-03-11T19:03:57.4968576Z ##[endgroup]
+2026-03-11T19:03:57.5013974Z [command]/usr/bin/git log -1 --format=%H
+2026-03-11T19:03:57.5045805Z 1293a7952f91d7908d81f62ab7d2cb47b117606b
