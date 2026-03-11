@@ -1,0 +1,13 @@
+﻿2026-03-11T18:53:31.2135600Z ##[group]Run actions/setup-java@v5
+2026-03-11T18:53:31.2136811Z with:
+2026-03-11T18:53:31.2137484Z   java-version: 1.8
+2026-03-11T18:53:31.2138249Z   java-package: jdk
+2026-03-11T18:53:31.2139006Z   check-latest: false
+2026-03-11T18:53:31.2139784Z   server-id: github
+2026-03-11T18:53:31.2140558Z   server-username: GITHUB_ACTOR
+2026-03-11T18:53:31.2141473Z   server-password: GITHUB_TOKEN
+2026-03-11T18:53:31.2142408Z   overwrite-settings: true
+2026-03-11T18:53:31.2143255Z   job-status: success
+2026-03-11T18:53:31.2144251Z   token: ***
+2026-03-11T18:53:31.2144949Z ##[endgroup]
+2026-03-11T18:53:31.3719546Z ##[error]Input required and not supplied: distribution

@@ -1,0 +1,8 @@
+2026-03-11T18:53:25.4820000Z Requested labels: ubuntu-latest
+2026-03-11T18:53:25.4820000Z Job defined at: PavanMudigonda/jacoco-playground/.github/workflows/coverage.yml@refs/heads/main
+2026-03-11T18:53:25.4820000Z Waiting for a runner to pick up this job...
+2026-03-11T18:53:25.4750000Z Evaluating build.if
+2026-03-11T18:53:25.4750000Z Evaluating: success()
+2026-03-11T18:53:25.4750000Z Result: true
+2026-03-11T18:53:25.5980000Z Job is waiting for a hosted runner to come online.
+2026-03-11T18:53:25.6390000Z Job is about to start running on the hosted runner: GitHub Actions 1000002787

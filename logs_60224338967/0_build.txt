@@ -1,0 +1,300 @@
+﻿2026-03-11T18:53:28.9577452Z Current runner version: '2.332.0'
+2026-03-11T18:53:28.9599843Z ##[group]Runner Image Provisioner
+2026-03-11T18:53:28.9600741Z Hosted Compute Agent
+2026-03-11T18:53:28.9601384Z Version: 20260213.493
+2026-03-11T18:53:28.9601949Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-03-11T18:53:28.9602634Z Build Date: 2026-02-13T00:28:41Z
+2026-03-11T18:53:28.9603529Z Worker ID: {374534b7-07c8-4aeb-83cc-87b025428888}
+2026-03-11T18:53:28.9604414Z Azure Region: westus
+2026-03-11T18:53:28.9604910Z ##[endgroup]
+2026-03-11T18:53:28.9606436Z ##[group]Operating System
+2026-03-11T18:53:28.9607020Z Ubuntu
+2026-03-11T18:53:28.9607489Z 24.04.3
+2026-03-11T18:53:28.9607880Z LTS
+2026-03-11T18:53:28.9608424Z ##[endgroup]
+2026-03-11T18:53:28.9608953Z ##[group]Runner Image
+2026-03-11T18:53:28.9609433Z Image: ubuntu-24.04
+2026-03-11T18:53:28.9610009Z Version: 20260302.42.1
+2026-03-11T18:53:28.9611131Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260302.42/images/ubuntu/Ubuntu2404-Readme.md
+2026-03-11T18:53:28.9612623Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260302.42
+2026-03-11T18:53:28.9613689Z ##[endgroup]
+2026-03-11T18:53:28.9616417Z ##[group]GITHUB_TOKEN Permissions
+2026-03-11T18:53:28.9618320Z Actions: write
+2026-03-11T18:53:28.9618854Z ArtifactMetadata: write
+2026-03-11T18:53:28.9619546Z Attestations: write
+2026-03-11T18:53:28.9620101Z Checks: write
+2026-03-11T18:53:28.9620548Z Contents: write
+2026-03-11T18:53:28.9621107Z Deployments: write
+2026-03-11T18:53:28.9621570Z Discussions: write
+2026-03-11T18:53:28.9622064Z Issues: write
+2026-03-11T18:53:28.9622542Z Metadata: read
+2026-03-11T18:53:28.9623083Z Models: read
+2026-03-11T18:53:28.9623745Z Packages: write
+2026-03-11T18:53:28.9624609Z Pages: write
+2026-03-11T18:53:28.9625232Z PullRequests: write
+2026-03-11T18:53:28.9625732Z RepositoryProjects: write
+2026-03-11T18:53:28.9626343Z SecurityEvents: write
+2026-03-11T18:53:28.9626886Z Statuses: write
+2026-03-11T18:53:28.9627392Z ##[endgroup]
+2026-03-11T18:53:28.9629422Z Secret source: Actions
+2026-03-11T18:53:28.9630102Z Prepare workflow directory
+2026-03-11T18:53:28.9950729Z Prepare all required actions
+2026-03-11T18:53:28.9988286Z Getting action download info
+2026-03-11T18:53:29.6253192Z Download action repository 'actions/checkout@v6' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-03-11T18:53:29.7701052Z Download action repository 'actions/setup-java@v5.2.0' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+2026-03-11T18:53:30.4341387Z Download action repository 'madrapps/jacoco-report@v1.7.2' (SHA:50d3aff4548aa991e6753342d9ba291084e63848)
+2026-03-11T18:53:31.0198872Z Download action repository 'PavanMudigonda/jacoco-reporter@v5.1' (SHA:e07fdcb036db08aa3da8b5d61798b590d799ed24)
+2026-03-11T18:53:31.5886354Z Complete job name: build
+2026-03-11T18:53:31.6567130Z ##[group]Run actions/checkout@v6
+2026-03-11T18:53:31.6567831Z with:
+2026-03-11T18:53:31.6568185Z   repository: PavanMudigonda/jacoco-playground
+2026-03-11T18:53:31.6568753Z   token: ***
+2026-03-11T18:53:31.6569060Z   ssh-strict: true
+2026-03-11T18:53:31.6569365Z   ssh-user: git
+2026-03-11T18:53:31.6569667Z   persist-credentials: true
+2026-03-11T18:53:31.6569985Z   clean: true
+2026-03-11T18:53:31.6570281Z   sparse-checkout-cone-mode: true
+2026-03-11T18:53:31.6570620Z   fetch-depth: 1
+2026-03-11T18:53:31.6570900Z   fetch-tags: false
+2026-03-11T18:53:31.6571188Z   show-progress: true
+2026-03-11T18:53:31.6571494Z   lfs: false
+2026-03-11T18:53:31.6571764Z   submodules: false
+2026-03-11T18:53:31.6572066Z   set-safe-directory: true
+2026-03-11T18:53:31.6572583Z ##[endgroup]
+2026-03-11T18:53:31.7508066Z Syncing repository: PavanMudigonda/jacoco-playground
+2026-03-11T18:53:31.7510582Z ##[group]Getting Git version info
+2026-03-11T18:53:31.7511929Z Working directory is '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T18:53:31.7513832Z [command]/usr/bin/git version
+2026-03-11T18:53:31.7620104Z git version 2.53.0
+2026-03-11T18:53:31.7675954Z ##[endgroup]
+2026-03-11T18:53:31.7691923Z Temporarily overriding HOME='/home/runner/work/_temp/baf7abf6-2b4a-46e1-89b5-14e8d50ba695' before making global git config changes
+2026-03-11T18:53:31.7694675Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-11T18:53:31.7698840Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:31.7740402Z Deleting the contents of '/home/runner/work/jacoco-playground/jacoco-playground'
+2026-03-11T18:53:31.7745255Z ##[group]Initializing the repository
+2026-03-11T18:53:31.7750174Z [command]/usr/bin/git init /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:31.7864230Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-11T18:53:31.7865816Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-11T18:53:31.7867070Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-11T18:53:31.7868220Z hint: call:
+2026-03-11T18:53:31.7868778Z hint:
+2026-03-11T18:53:31.7869539Z hint: 	git config --global init.defaultBranch <name>
+2026-03-11T18:53:31.7870356Z hint:
+2026-03-11T18:53:31.7870879Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-11T18:53:31.7871954Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-11T18:53:31.7872780Z hint:
+2026-03-11T18:53:31.7873233Z hint: 	git branch -m <name>
+2026-03-11T18:53:31.7873930Z hint:
+2026-03-11T18:53:31.7874532Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-11T18:53:31.7875515Z Initialized empty Git repository in /home/runner/work/jacoco-playground/jacoco-playground/.git/
+2026-03-11T18:53:31.7881939Z [command]/usr/bin/git remote add origin https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T18:53:31.7919432Z ##[endgroup]
+2026-03-11T18:53:31.7920267Z ##[group]Disabling automatic garbage collection
+2026-03-11T18:53:31.7924371Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-11T18:53:31.7955970Z ##[endgroup]
+2026-03-11T18:53:31.7957284Z ##[group]Setting up auth
+2026-03-11T18:53:31.7958179Z Removing SSH command configuration
+2026-03-11T18:53:31.7963686Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-11T18:53:31.7996550Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-11T18:53:31.8365423Z Removing HTTP extra header
+2026-03-11T18:53:31.8370751Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-11T18:53:31.8402347Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-11T18:53:31.8631257Z Removing includeIf entries pointing to credentials config files
+2026-03-11T18:53:31.8637621Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-11T18:53:31.8669910Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-11T18:53:31.8922854Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-11T18:53:31.8961039Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:31.8993161Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:31.9025847Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:31.9058304Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:31.9086300Z ##[endgroup]
+2026-03-11T18:53:31.9087119Z ##[group]Fetching the repository
+2026-03-11T18:53:31.9095969Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e141fe6a315efa5e6da47abd35cba3578ba8d445:refs/remotes/origin/main
+2026-03-11T18:53:32.3765189Z From https://github.com/PavanMudigonda/jacoco-playground
+2026-03-11T18:53:32.3766390Z  * [new ref]         e141fe6a315efa5e6da47abd35cba3578ba8d445 -> origin/main
+2026-03-11T18:53:32.3814559Z [command]/usr/bin/git branch --list --remote origin/main
+2026-03-11T18:53:32.3840061Z   origin/main
+2026-03-11T18:53:32.3849449Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-03-11T18:53:32.3897453Z e141fe6a315efa5e6da47abd35cba3578ba8d445
+2026-03-11T18:53:32.3901767Z ##[endgroup]
+2026-03-11T18:53:32.3902916Z ##[group]Determining the checkout info
+2026-03-11T18:53:32.3904218Z ##[endgroup]
+2026-03-11T18:53:32.3907288Z [command]/usr/bin/git sparse-checkout disable
+2026-03-11T18:53:32.3945544Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-11T18:53:32.3973191Z ##[group]Checking out the ref
+2026-03-11T18:53:32.3976637Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-11T18:53:32.4066350Z Switched to a new branch 'main'
+2026-03-11T18:53:32.4069352Z branch 'main' set up to track 'origin/main'.
+2026-03-11T18:53:32.4075023Z ##[endgroup]
+2026-03-11T18:53:32.4112254Z [command]/usr/bin/git log -1 --format=%H
+2026-03-11T18:53:32.4136754Z e141fe6a315efa5e6da47abd35cba3578ba8d445
+2026-03-11T18:53:32.4486526Z ##[group]Run actions/setup-java@v5.2.0
+2026-03-11T18:53:32.4486904Z with:
+2026-03-11T18:53:32.4487162Z   java-version: 17
+2026-03-11T18:53:32.4487427Z   distribution: corretto
+2026-03-11T18:53:32.4487698Z   java-package: jdk
+2026-03-11T18:53:32.4487951Z   check-latest: false
+2026-03-11T18:53:32.4488198Z   server-id: github
+2026-03-11T18:53:32.4488449Z   server-username: GITHUB_ACTOR
+2026-03-11T18:53:32.4488735Z   server-password: GITHUB_TOKEN
+2026-03-11T18:53:32.4489022Z   overwrite-settings: true
+2026-03-11T18:53:32.4489298Z   job-status: success
+2026-03-11T18:53:32.4489683Z   token: ***
+2026-03-11T18:53:32.4489927Z ##[endgroup]
+2026-03-11T18:53:32.6008045Z ##[group]Installed distributions
+2026-03-11T18:53:32.6035291Z Trying to resolve the latest version from remote
+2026-03-11T18:53:32.6319077Z Resolved latest version as 17.0.18+9.1
+2026-03-11T18:53:32.6319729Z Trying to download...
+2026-03-11T18:53:32.6321069Z Downloading Java 17.0.18+9.1 (Corretto) from https://corretto.aws/downloads/resources/17.0.18.9.1/amazon-corretto-17.0.18.9.1-linux-x64.tar.gz ...
+2026-03-11T18:53:33.5521582Z Extracting Java archive...
+2026-03-11T18:53:33.5626284Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/bb546e4a-f745-4fab-a8de-4551dedc6100 -f /home/runner/work/_temp/12f4e8f7-c3cd-4fc6-93a9-038052fe0170
+2026-03-11T18:53:36.3485092Z Java 17.0.18+9.1 was downloaded
+2026-03-11T18:53:36.3485565Z Setting Java 17.0.18+9.1 as the default
+2026-03-11T18:53:36.3497904Z Creating toolchains.xml for JDK version 17 from corretto
+2026-03-11T18:53:36.3601578Z Writing to /home/runner/.m2/toolchains.xml
+2026-03-11T18:53:36.3602636Z 
+2026-03-11T18:53:36.3602861Z Java configuration:
+2026-03-11T18:53:36.3603516Z   Distribution: corretto
+2026-03-11T18:53:36.3603949Z   Version: 17.0.18+9.1
+2026-03-11T18:53:36.3604486Z   Path: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.3604954Z 
+2026-03-11T18:53:36.3605457Z ##[endgroup]
+2026-03-11T18:53:36.3624894Z Creating settings.xml with server-id: github
+2026-03-11T18:53:36.3625486Z Writing to /home/runner/.m2/settings.xml
+2026-03-11T18:53:36.3778991Z ##[group]Run chmod +x gradlew
+2026-03-11T18:53:36.3779319Z [36;1mchmod +x gradlew[0m
+2026-03-11T18:53:36.3834589Z shell: /usr/bin/bash -e {0}
+2026-03-11T18:53:36.3834846Z env:
+2026-03-11T18:53:36.3835122Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.3835582Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.3835921Z ##[endgroup]
+2026-03-11T18:53:36.4117538Z ##[group]Run ./gradlew testCoverage
+2026-03-11T18:53:36.4117857Z [36;1m./gradlew testCoverage[0m
+2026-03-11T18:53:36.4165198Z shell: /usr/bin/bash -e {0}
+2026-03-11T18:53:36.4165441Z env:
+2026-03-11T18:53:36.4165708Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.4166152Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T18:53:36.4166504Z ##[endgroup]
+2026-03-11T18:53:36.5238539Z Downloading https://services.gradle.org/distributions/gradle-7.3.1-bin.zip
+2026-03-11T18:53:38.8421489Z ...........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
+2026-03-11T18:53:39.7912733Z 
+2026-03-11T18:53:39.7944112Z Welcome to Gradle 7.3.1!
+2026-03-11T18:53:39.7961089Z 
+2026-03-11T18:53:39.7961740Z Here are the highlights of this release:
+2026-03-11T18:53:39.7962905Z  - Easily declare new test suites in Java projects
+2026-03-11T18:53:39.7964063Z  - Support for Java 17
+2026-03-11T18:53:39.7964805Z  - Support for Scala 3
+2026-03-11T18:53:39.7965358Z 
+2026-03-11T18:53:39.7965982Z For more details see https://docs.gradle.org/7.3.1/release-notes.html
+2026-03-11T18:53:39.7966858Z 
+2026-03-11T18:53:39.8871630Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-03-11T18:53:56.1880748Z 
+2026-03-11T18:53:56.1965090Z > Task :compileKotlin FAILED
+2026-03-11T18:53:56.1984071Z e: java.lang.ExceptionInInitializerError
+2026-03-11T18:53:56.2063901Z 	at org.jetbrains.kotlin.com.intellij.pom.java.LanguageLevel.<clinit>(LanguageLevel.java:25)
+2026-03-11T18:53:56.2065517Z 	at org.jetbrains.kotlin.com.intellij.core.CoreLanguageLevelProjectExtension.<init>(CoreLanguageLevelProjectExtension.java:26)
+2026-03-11T18:53:56.2067208Z 	at org.jetbrains.kotlin.com.intellij.core.JavaCoreProjectEnvironment.<init>(JavaCoreProjectEnvironment.java:42)
+2026-03-11T18:53:56.2068761Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreProjectEnvironment.<init>(KotlinCoreProjectEnvironment.kt:26)
+2026-03-11T18:53:56.2070343Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment$ProjectEnvironment.<init>(KotlinCoreEnvironment.kt:121)
+2026-03-11T18:53:56.2071990Z 	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment$Companion.createForProduction(KotlinCoreEnvironment.kt:425)
+2026-03-11T18:53:56.2073668Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.createCoreEnvironment(K2JVMCompiler.kt:226)
+2026-03-11T18:53:56.2074778Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:152)
+2026-03-11T18:53:56.2075842Z 	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:52)
+2026-03-11T18:53:56.2076787Z 	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:88)
+2026-03-11T18:53:56.2077713Z 	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:44)
+2026-03-11T18:53:56.2078590Z 	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:98)
+2026-03-11T18:53:56.2079803Z 	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:386)
+2026-03-11T18:53:56.2081454Z 	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:110)
+2026-03-11T18:53:56.2083129Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileIncrementally(IncrementalCompilerRunner.kt:286)
+2026-03-11T18:53:56.2085298Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl$rebuild(IncrementalCompilerRunner.kt:99)
+2026-03-11T18:53:56.2087157Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:114)
+2026-03-11T18:53:56.2089269Z 	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:74)
+2026-03-11T18:53:56.2090980Z 	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:607)
+2026-03-11T18:53:56.2093034Z 	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:96)
+2026-03-11T18:53:56.2134773Z 	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1659)
+2026-03-11T18:53:56.2135943Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026-03-11T18:53:56.2137141Z 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2026-03-11T18:53:56.2138541Z 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026-03-11T18:53:56.2139652Z 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+2026-03-11T18:53:56.2140548Z 	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+2026-03-11T18:53:56.2141412Z 	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+2026-03-11T18:53:56.2142166Z 	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+2026-03-11T18:53:56.2143127Z 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+2026-03-11T18:53:56.2144296Z 	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+2026-03-11T18:53:56.2145259Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+2026-03-11T18:53:56.2146379Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+2026-03-11T18:53:56.2147568Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+2026-03-11T18:53:56.2148781Z 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2026-03-11T18:53:56.2149882Z 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+2026-03-11T18:53:56.2151067Z 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2026-03-11T18:53:56.2152287Z 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2026-03-11T18:53:56.2153203Z 	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-03-11T18:53:56.2155234Z Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected void java.util.ResourceBundle.setParent(java.util.ResourceBundle) accessible: module java.base does not "opens java.util" to unnamed module @4c7a7078
+2026-03-11T18:53:56.2157292Z 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+2026-03-11T18:53:56.2158560Z 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+2026-03-11T18:53:56.2159621Z 	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+2026-03-11T18:53:56.2160573Z 	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+2026-03-11T18:53:56.2161578Z 	at org.jetbrains.kotlin.com.intellij.util.ReflectionUtil.makeAccessible(ReflectionUtil.java:252)
+2026-03-11T18:53:56.2162854Z 	at org.jetbrains.kotlin.com.intellij.util.ReflectionUtil.getDeclaredMethod(ReflectionUtil.java:269)
+2026-03-11T18:53:56.2196400Z 	at org.jetbrains.kotlin.com.intellij.DynamicBundle.<clinit>(DynamicBundle.java:22)
+2026-03-11T18:53:56.2197155Z 	... 38 more
+2026-03-11T18:53:56.2197335Z 
+2026-03-11T18:53:56.2870046Z 
+2026-03-11T18:53:56.2877460Z FAILURE: Build failed with an exception.
+2026-03-11T18:53:56.2882730Z 
+2026-03-11T18:53:56.2888332Z * What went wrong:
+2026-03-11T18:53:56.2894307Z Execution failed for task ':compileKotlin'.
+2026-03-11T18:53:56.2900590Z > Internal compiler error. See log for more details
+2026-03-11T18:53:56.2906228Z 
+2026-03-11T18:53:56.2911596Z * Try:
+2026-03-11T18:53:56.2919003Z > Run with --stacktrace option to get the stack trace.
+2026-03-11T18:53:56.2927112Z > Run with --info or --debug option to get more log output.
+2026-03-11T18:53:56.2934934Z > Run with --scan to get full insights.
+2026-03-11T18:53:56.2946365Z 
+2026-03-11T18:53:56.2946381Z 
+2026-03-11T18:53:56.2946882Z * Get more help at https://help.gradle.org
+2026-03-11T18:53:56.2950403Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+2026-03-11T18:53:56.2955956Z 
+2026-03-11T18:53:56.2962225Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-03-11T18:53:56.2968396Z 
+2026-03-11T18:53:56.2974863Z See https://docs.gradle.org/7.3.1/userguide/command_line_interface.html#sec:command_line_warnings
+2026-03-11T18:53:56.2982064Z 
+2026-03-11T18:53:56.2987043Z BUILD FAILED in 19s
+2026-03-11T18:53:56.2993120Z 1 actionable task: 1 executed
+2026-03-11T18:53:56.6556818Z ##[error]Process completed with exit code 1.
+2026-03-11T18:53:56.6682791Z Post job cleanup.
+2026-03-11T18:53:56.8242970Z Post job cleanup.
+2026-03-11T18:53:56.9341459Z [command]/usr/bin/git version
+2026-03-11T18:53:56.9379130Z git version 2.53.0
+2026-03-11T18:53:56.9449815Z Temporarily overriding HOME='/home/runner/work/_temp/bb64c1bf-274d-4582-93bb-614ee24c160c' before making global git config changes
+2026-03-11T18:53:56.9451374Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-11T18:53:56.9453822Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jacoco-playground/jacoco-playground
+2026-03-11T18:53:56.9485912Z Removing SSH command configuration
+2026-03-11T18:53:56.9492841Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-11T18:53:56.9527923Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-11T18:53:56.9792355Z Removing HTTP extra header
+2026-03-11T18:53:56.9798683Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-11T18:53:56.9833102Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-11T18:53:57.0068446Z Removing includeIf entries pointing to credentials config files
+2026-03-11T18:53:57.0074994Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-11T18:53:57.0099135Z includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path
+2026-03-11T18:53:57.0100195Z includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path
+2026-03-11T18:53:57.0101026Z includeif.gitdir:/github/workspace/.git.path
+2026-03-11T18:53:57.0101611Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-11T18:53:57.0109593Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path
+2026-03-11T18:53:57.0131529Z /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0142040Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git.path /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0177965Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path
+2026-03-11T18:53:57.0200299Z /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0209078Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/jacoco-playground/jacoco-playground/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0240738Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-03-11T18:53:57.0262687Z /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0270554Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0301275Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-11T18:53:57.0322555Z /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0331722Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config
+2026-03-11T18:53:57.0365454Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-11T18:53:57.0599280Z Removing credentials config '/home/runner/work/_temp/git-credentials-c8057587-6655-4f0d-bd47-03ace9570eef.config'
+2026-03-11T18:53:57.0731494Z Cleaning up orphan processes
+2026-03-11T18:53:57.1071735Z Terminate orphan process: pid (2350) (java)
+2026-03-11T18:53:57.1092913Z Terminate orphan process: pid (2461) (java)
