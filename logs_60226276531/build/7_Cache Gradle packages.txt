@@ -1,0 +1,15 @@
+﻿2026-03-11T19:07:41.5503768Z ##[group]Run actions/cache@v5
+2026-03-11T19:07:41.5504028Z with:
+2026-03-11T19:07:41.5504202Z   path: ~/.gradle/caches
+2026-03-11T19:07:41.5504583Z   key: Linux-gradle-c58bc872377039a37d65fa95c01379a1f929cda4e68c51bd8a5b1056f4580367
+2026-03-11T19:07:41.5505018Z   restore-keys: Linux-gradle
+2026-03-11T19:07:41.5505251Z   enableCrossOsArchive: false
+2026-03-11T19:07:41.5505478Z   fail-on-cache-miss: false
+2026-03-11T19:07:41.5505689Z   lookup-only: false
+2026-03-11T19:07:41.5505882Z   save-always: false
+2026-03-11T19:07:41.5506058Z env:
+2026-03-11T19:07:41.5506315Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.5506737Z   JAVA_HOME_8_X64: /opt/hostedtoolcache/Java_Corretto_jdk/8.482.08-1/x64
+2026-03-11T19:07:41.5507156Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.5507482Z ##[endgroup]
+2026-03-11T19:07:41.8025332Z Cache not found for input keys: Linux-gradle-c58bc872377039a37d65fa95c01379a1f929cda4e68c51bd8a5b1056f4580367, Linux-gradle

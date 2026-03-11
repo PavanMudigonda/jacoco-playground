@@ -1,0 +1,15 @@
+﻿2026-03-11T19:07:41.2137347Z ##[group]Run actions/cache@v5
+2026-03-11T19:07:41.2137747Z with:
+2026-03-11T19:07:41.2137913Z   path: ~/.sonar/cache
+2026-03-11T19:07:41.2138103Z   key: Linux-sonar
+2026-03-11T19:07:41.2138291Z   restore-keys: Linux-sonar
+2026-03-11T19:07:41.2138522Z   enableCrossOsArchive: false
+2026-03-11T19:07:41.2138751Z   fail-on-cache-miss: false
+2026-03-11T19:07:41.2138951Z   lookup-only: false
+2026-03-11T19:07:41.2139141Z   save-always: false
+2026-03-11T19:07:41.2139306Z env:
+2026-03-11T19:07:41.2139565Z   JAVA_HOME: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.2139997Z   JAVA_HOME_8_X64: /opt/hostedtoolcache/Java_Corretto_jdk/8.482.08-1/x64
+2026-03-11T19:07:41.2140414Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Corretto_jdk/17.0.18-9.1/x64
+2026-03-11T19:07:41.2140741Z ##[endgroup]
+2026-03-11T19:07:41.4595174Z Cache not found for input keys: Linux-sonar, Linux-sonar
